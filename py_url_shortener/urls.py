@@ -1,10 +1,5 @@
-from django.conf.urls import patterns, include, url
-from django.contrib import admin
+from django.conf.urls import patterns, url
+from encurtador.views import LinkCreate
 
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'py_url_shortener.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
-
-    url(r'^admin/', include(admin.site.urls)),
-)
+                       url(r'^$', LinkCreate.as_view(), name='home'))
