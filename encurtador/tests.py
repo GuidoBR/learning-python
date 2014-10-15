@@ -31,3 +31,18 @@ class ShortenerText(TestCase):
         response = self.client.get(reverse("home"))
         self.assertEqual(response.status_code, 200)
         self.assertIn("form", response.context)
+
+    def test_formulario_encurtador(self):
+        """
+        Verifica se ao submeter o formulário, recebo uma URL
+        """
+        url = "http://www.google.com/"
+        response = self.client.post(reverse("home"),
+                                    {"url": url}, follow=True)
+        self.assertEqual(response.status_code, 200)
+        self.assertIn("link", response.context)
+
+        l = response.context["link"]
+        self.assertEqual(url, l.url)
+
+
