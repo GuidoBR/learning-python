@@ -1,2 +1,18 @@
-<p> Link encurtado: <a href="{{ object.url_curta }}">localhost/{{ object.id }} </a> </p>
-<p> Link original: <a href={{ object.url }}> {{ object.url }} </a> </p>
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <meta charset="utf-8">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    </head>
+
+    <body>
+    <div class="container">
+        <h1>Py-URL-Shortener</h1>
+        <p><a href={{ object.url_curta }}>Link Encurtado</a></p>
+        <p><a href={{ object.url }}>Link Original</a></p>
+    </div>
+    </body>
+</html>
