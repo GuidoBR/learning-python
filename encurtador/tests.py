@@ -45,4 +45,14 @@ class ShortenerText(TestCase):
         l = response.context["link"]
         self.assertEqual(url, l.url)
 
-
+    def test_redirecionamento_para_link_original(self):
+        """
+        Testa o redirecionamento para o Link original
+        """
+        url = "http://www.google.com/"
+        l = Link(url=url)
+        short_url = Link.encurtar(l)
+        response = self.client.get(
+            reverse("redirect_short_url",
+                    kwargs={"short_url": short_url}))
+        self.assertRedirects(response, url)
