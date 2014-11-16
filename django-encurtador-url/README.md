@@ -10,6 +10,7 @@ Encurtador de URL. Feito para aprender Python, Django e TDD
 ===
 Para testar:
 
-- git clone https://github.com/GuidoBR/py_url_shortener/
+- git clone https://github.com/GuidoBR/learning-python
 - pip install django
+- cd django-encurtador-url
 - ./manage.py runserver
