@@ -12,3 +12,8 @@ Para testar:
 - git clone https://github.com/GuidoBR/learning-python
 - pip install flask
 - cd flaskr
+- 
+==
+Referências:
+
+- http://flask.pocoo.org/docs/0.10/tutorial/introduction/
