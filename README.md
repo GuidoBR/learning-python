@@ -8,18 +8,21 @@ Encurtador de URL. Feito para aprender Python, Django e TDD
 - Python 3.4
 - Django 1.7
 
-flaskr
+Driblando o Dribble
 ===
-Blog. Feito para aprender Python e Flask
+Aplicação de exemplo para testar a API do Dribble.
 
-- Python 3.4
-- Flask 0.10
+- Django 1.7
+- API do Dribble
 
-Python Bird
+
+Invent your own computer games with python
 ===
-Versão do Flappy Bird para linha de comando.
-Fonte do projeto: https://github.com/pythonprobr/pythonbirds
+Games simples, para aprendizado e ensino de programação.
 
-- Python 3.4
-- TDD
-- Programação Orientada a Objetos
+Projeto GAE Tekton
+===
+Site feito durante o curso de App Engine da Python Pro
+
+- Publicado no GAE: https://lightvacations.appspot.com/
+- Tekton
