@@ -1,0 +1,1 @@
+/home/guido/Documentos/Projetos/LightVacations/backend/venv/venv.sh
