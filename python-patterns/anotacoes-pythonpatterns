@@ -1,14 +1,19 @@
--> Ler introdução de GoF
--> Comprar Head First Design Patterns
--> Melhor livro de Design Pattern para Pythonistas: Design Patterns in Ruby
--> Melhor livro sobre Python: Python in a Nutshell (2006)
--> Design Patterns não se restringe à linguagens OO! Mas se adaptam em cada tipo de linguagem.
--> http://best-practice-software-engineering.ifs.tuwien.ac.at/patterns.html
--> http://python.pro.br/wiki/index.php?title=Design_Patterns
--> http://www.c2.com/cgi/wiki?DesignPatterns
--> https://en.wikipedia.org/wiki/Software_design_pattern
--> Voluntário para o Wiki
--> Exercícios da aula 2:
-    - Implementar Facade
-    - Implementar Singleton
+# Python Patterns
+Turma: 01
+Professor: Luciano Ramalho
+
+- Ler introdução de GoF
+- Comprar Head First Design Patterns
+- Melhor livro de Design Pattern para Pythonistas: Design Patterns in Ruby
+- Melhor livro sobre Python: Python in a Nutshell (2006)
+- Design Patterns não se restringe à linguagens OO! Mas se adaptam em cada tipo de linguagem.
+- http://best-practice-software-engineering.ifs.tuwien.ac.at/patterns.html
+- http://python.pro.br/wiki/index.php?title=Design_Patterns
+- http://www.c2.com/cgi/wiki?DesignPatterns
+- https://en.wikipedia.org/wiki/Software_design_pattern
+- Voluntário para o Wiki
+
+## Exercícios da aula 2:
+- Implementar Facade
+- Implementar Singleton
 
