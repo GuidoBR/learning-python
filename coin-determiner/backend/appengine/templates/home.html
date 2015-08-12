@@ -1,0 +1,22 @@
+{% extends 'base/base.html' %}
+{% block css %}
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap-social.css"/>
+    <link rel="stylesheet" href="/static/font-awesome-4.2.0/css/font-awesome.min.css"/>
+{% endblock %}
+{% block body %}
+<div class="container text-center">
+    <div class="row">
+        <div class="well">
+            <h2>{% trans %}Input Upload Form{% endtrans %}</h2>
+            <form action="{{ upload_url }}" method="post" role="form" enctype="multipart/form-data">
+                {{ csrf_input() }}
+               <div class="form-group">
+                   <label for="upInput" class="control-label">{% trans %}Choose a file{% endtrans %}</label>
+                   <input id="upInput" type="file" class="file" name="files[]" class="form-control"/>
+               </div>
+               <button type="submit" class="btn btn-success"><i class="glyphicon glyphicon-upload"></i> {% trans %}Upload{% endtrans %}</button>
+           </form>
+       </div>
+   </div>
+</div>
+{% endblock %}

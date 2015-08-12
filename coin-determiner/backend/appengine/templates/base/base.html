@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% macro csrf_input() %}
+    <input type="hidden" value="{{ _csrf_code }}" name="_csrf_code"/>
+{% endmacro %}
+{% macro form_input(label,property,value,error_msg) %}
+    <div class="form-group {{ ' has-error' if error_msg }}">
+        <label for="{{ property }}Input"
+               class="control-label">{{ label }} </label>
+        <input id="{{ property }}Input" type="text" class="form-control" name="{{ property }}"
+               value="{{ value }}"/>
+        {% if error_msg %}<span class="help-block">{{ error_msg }}</span>{% endif %}
+    </div>
+{% endmacro %}
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title %}Coin Determiner{% endblock %}</title>
+    <!-- Bootstrap -->
+
+    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/default.css" rel="stylesheet">
+
+    <script src="/static/jquery/js/jquery-1.11.1.min.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/js/fileinput.min.js"></script>
+    {% block css %}{% endblock %}
+    {% block js %}{% endblock %}
+</head>
+<body>
+<div class="navbar-wrapper">
+    <div class="navbar navbar-inverse navbar-static-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">Coin Determiner</a>
+        </div>
+    </div>
+</div>
+{% block body %}{% endblock %}
+<div class="footer">
+    <div class="container">
+        <p class="text-muted text-right"><a target="_blank"
+                                                               href="http://www.guidopercu.com.br">
+            Guido Luz Percú</a></p>
+    </div>
+</div>
+</body>
+</html>
