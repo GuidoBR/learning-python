@@ -14,8 +14,8 @@ shakespeare_url = 'http://www.gutenberg.org/cache/epub/100/pg100.txt'
 req = requests.get(shakespeare_url)
 content = req.content
 
-content = re.sub('\s+', ' ', content)  # condense all whitespace
-content = re.sub('[^A-Za-z]+ ', '', content)  # remove non-alpha chars
+content = re.sub('\s+', ' ', content)
+content = re.sub('[^A-Za-z]+ ', '', content)
 words = content.split()
 
 word_counter = collections.Counter(words)
