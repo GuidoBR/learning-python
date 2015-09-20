@@ -55,3 +55,6 @@ class Directory(Filesystem):
     def __init__(self):
         super(self.__class__, self).__init__()
         self.items = [item for item in self.items if item.endswith('/')]
+
+if __name__ == "__main__":
+    main()
