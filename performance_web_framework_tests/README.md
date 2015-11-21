@@ -14,6 +14,19 @@ Other frameworks:
 http://morepath.readthedocs.org/en/latest/
 http://pyramid-blogr.readthedocs.org/en/latest/
 
+Apache benchmark:
+ab -n 1000 -c 50 http://10.0.1.27:3000/?name=andre
+ab -n 1000 -c 50 http://10.0.1.90:8080/workshop/hello/andre
+
+jmeter
+http://newrelic.com/sp/python-monitoring
+https://github.com/Pylons/pyramid_debugtoolbar
+https://docs.python.org/2/library/profile.html
+http://wsgi.readthedocs.org/en/latest/
+https://www.python.org/dev/peps/pep-0333/
+http://wsgi.tutorial.codepoint.net/
+https://www.devside.net/wamp-server/load-testing-apache-with-ab-apache-bench
+
 
 == Simple Hello World Applications ==
 
