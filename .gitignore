@@ -1,4 +1,6 @@
-.ropeproject/*
+*.ropeproject/*
 __pycache__/
 .sublime-*
 venvlearning/*
+**.swp
+venv/
