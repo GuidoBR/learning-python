@@ -1,0 +1,8 @@
+import pygame
+from pygame.locals import *
+import sys
+
+class SpaceInvaders:
+    def __init__(self):
+        self.screen = pygame.display._set_mode(800, 600)
+        self.enemy = [pygame.image('assets/a1_0.png').convert,
