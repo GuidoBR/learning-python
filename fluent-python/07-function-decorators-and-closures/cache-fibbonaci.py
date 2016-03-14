@@ -7,4 +7,5 @@ def fib(n):
     return fib(n-2) + fib(n-1)
 
 if __name__ == "__main__":
-    print(fib(500))
+    print(fib(1))
+    print(fib(501))
