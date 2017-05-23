@@ -9,14 +9,19 @@ def get_stocks():
     return stocks
 
 def download_all(stocks, session_id):
+    s = requests.Session()
     for stock in stocks:
-        url = "{}balancos.php?papel={}&tipo=1".format(BASE_URL, stock)
-        requests.get(url)
+        referer_url = "{}balancos.php?papel={}&tipo=1".format(BASE_URL,stock)
+        s.get(referer_url)
+        s.headers.update({'Referer': referer_url})
+        s.headers.update({'HOST': "www.fundamentus.com.br"})
+        s.headers.update({'User-Agent': "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"})
+        s.headers.update({'Cookie': "__utmt=1; PHPSESSID={}; __utma=138951332.685737504.1494551880.1494996032.1495510253.5; __utmb=138951332.4.10.1495510253; __utmc=138951332; __utmz=138951332.1494551880.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)".format(session_id)})
 
         download_link = "{}planilhas.php?SID={}".format(BASE_URL, session_id)
-        stock_file = requests.get(download_link)
+        stock_file = s.get(download_link)
 
-        with open("./{}".format(stock), 'wb') as f:
+        with open("./balancos/{}.zip".format(stock), 'wb') as f:
             print("Downloading {} ...".format(stock))
             for chunk in stock_file.iter_content(chunk_size=128):
                 f.write(chunk)
