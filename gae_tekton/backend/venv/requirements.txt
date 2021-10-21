@@ -5,5 +5,5 @@ gaeforms==0.14
 gaegraph==3.9
 gaepermission==0.12
 pytz==2014.4
-Babel==1.3
+Babel==2.9.1
 python-slugify==0.0.7
