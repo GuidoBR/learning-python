@@ -15,6 +15,8 @@ def letters_count(dna_string):
 
     >>> letters_count("AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC")
     '20 12 17 21'
+    >>> letters_count("AGGGCT")
+    '1 1 3 1'
     """
     return f"{dna_string.count('A')} {dna_string.count('C')} {dna_string.count('G')} {dna_string.count('T')}"
 
