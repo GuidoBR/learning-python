@@ -16,6 +16,8 @@ def reverse_complement(dna_string):
     Return: The reverse complement sc of s
     >>> reverse_complement('AAAACCCGGT')
     'ACCGGGTTTT'
+    >>> reverse_complement('GATTACA')
+    'TGTAATC'
     """
     return dna_string.replace('A', 't').replace('T', 'a').replace('C', 'g').replace('G', 'c').upper()[::-1]
 
