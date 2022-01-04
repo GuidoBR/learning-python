@@ -10,4 +10,4 @@ reverso_complementar = s.reverse_complement()
 rna = s.transcribe()
 proteina = s.translate()
 
-print("DNA: {} | RNA: {} | Proteina: {} \nComplemento: {} | Comlpemento Reverso: {}".format(s, rna, proteina, complementar, reverso_complementar))
+print("DNA: {} | RNA: {} | Proteina: {} \nComplemento: {} | Complemento Reverso: {}".format(s, rna, proteina, complementar, reverso_complementar))
