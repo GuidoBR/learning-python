@@ -18,6 +18,8 @@ def reverse_complement(dna_string):
     'ACCGGGTTTT'
     >>> reverse_complement('GATTACA')
     'TGTAATC'
+    >>> reverse_complement('CCAGATC')
+    'GATCTGG'
     """
     return dna_string.replace('A', 't').replace('T', 'a').replace('C', 'g').replace('G', 'c').upper()[::-1]
 
