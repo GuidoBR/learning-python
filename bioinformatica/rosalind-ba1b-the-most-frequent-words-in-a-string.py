@@ -40,6 +40,8 @@ def most_frequent_kmers(dna_string, k):
     'CATG GCAT'
     >>> most_frequent_kmers("TAAACGTGAGAGAAACGTGCTGATTACACTTGTTCGTGTGGTAT", 3)
     'CGT GTG'
+    >>> most_frequent_kmers("CGCCTAAATAGCCTCGCGGAGCCTTATGTCATACTCGTCCT", 3)
+    'CCT'
     """
     all_kmers = sliding_window(dna_string, k)
     max_kmer_value = 0
