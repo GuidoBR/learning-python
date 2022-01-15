@@ -8,6 +8,9 @@ def reverse_complement(dna_string):
 
     Given: A DNA string Pattern.
     Return: Pattern, the reverse complement of Pattern.
+
+    >>> reverse_complement('GTCA')
+    'TGAC'
     >>> reverse_complement('AAAACCCGGT')
     'ACCGGGTTTT'
     """
@@ -22,3 +25,6 @@ def reverse_complement(dna_string):
 
 if __name__ == '__main__':
     doctest.testmod()
+
+    dna_string = input()
+    print(reverse_complement(dna_string))
